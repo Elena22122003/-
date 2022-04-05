@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'CormorantInfant-SemiBold';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: 'CormorantInfant-SemiBoldItalic';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-SemiBoldItalic.ttf);
+}
+
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'CormorantInfant-Light';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-Light.ttf);
+}
+
+@font-face{
+    font-family: 'CormorantInfant-MediumItalic';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-MediumItalic.ttf);
+}
+
+@font-face{
+    font-family: 'CormorantInfant-Medium';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-Medium.ttf);
+}
+
+body{
+    width: 100%;
+    background: url(../images/background.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.conteiner{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*HEADER*/
+.header{
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 60px;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.header_inner{
+    display: flex;
+    flex: 1 1 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header_item{
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.header_item p{
+    font-family: 'CormorantInfant-SemiBold';
+    font-size: 28px;
+    color: #756b62;
+}
+
+.nav_item{
+    text-decoration: none;
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    color: grey;
+    margin: 0px 20px;
+    text-align: left;
+}
+/*HEADER*/
+
+/*INTRO*/
+.intro{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro_item1{
+    padding-top: 150px;
+}
+
+.intro_item2{
+    position: relative;
+    max-width: 640px;
+    width: 100%;
+    text-align: left;
+    font-family: 'CormorantInfant-Light';
+    font-size: 100px;
+    color: #756b62;
+    z-index: 200;
+}
+
+.intro_item3{
+    padding-top: 120px;
+    max-width: 640px;
+    text-align: center;
+}
+
+.intro_item4{
+    position: absolute;
+    top: 240px;
+    left: 500px;
+    right: 145px;
+    z-index: 0;
+}
+
+.intro_item5{
+    position: absolute;
+    top: 880px;
+    left: 1000px;
+    right: 400px;
+    z-index: 300;
+}
+/*INTRO*/
+
+/*LOVE*/
+.love{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+}
+
+.love_inner{
+    padding-top: 290px;
+    padding-left: 80px;
+    max-width: 880px;
+    width: 100%;
+    text-align: center;
+    font-family: 'CormorantInfant-MediumItalic';
+    font-size: 55px;
+    color: grey;
+}
+
+.text{
+    font-family: 'CormorantInfant-SemiBold';
+    color: #756b62;
+}
+
+.love_item1{
+    position: absolute;
+    top: 240px;
+    left: 910px;
+    right: 400px;
+    z-index: 300;
+}
+
+/*LOVE*/
+
+/*COLLECTION*/
+.collection{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.col{
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: grey;
+    padding-left: 110px;
+}
+
+.col::before{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 50px;
+    border: 1px solid grey;
+    margin: 0px 20px;
+    left: 0px;
+    top: 10px;
+}
+
+.collection_inner{
+    display: flex;
+    flex: 1 1 0;
+    width: 100%;
+    padding-top: 120px;
+}
+
+.collection_item{
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    height: 470px;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+}
+
+.content div{
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+.content img{
+    margin-top: 45px;
+}
+
+.col_item{
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    z-index: 300;
+}
+/*COLLECTION*/
+
+/*HISTORY*/
+.history{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.history_inner{
+    display: flex;
+    flex: 1 1 0;
+    width: 100%;
+}
+
+.history_content{
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    margin-right: 180px;
+    width: 100%;
+}
+
+.loz{
+    font-family:'CormorantInfant-MediumItalic';
+    font-size: 55px;
+    color: #756b62;
+    font-weight: 100;
+    margin: 25px 0px;
+}
+
+.min{
+    font-family: 'CormorantInfant-SemiBoldItalic';
+    font-size: 24px;
+    color: grey;
+    margin: 25px 0px;
+}
+
+.creativer{
+    display: flex;
+    flex: 1 1 0;
+    max-width: 240px;
+    width: 100%;
+    max-height: 75px;
+    align-items: center;
+}
+
+.creativer_info{
+    margin: 0px 15px;
+    font-family: 'Montserrat-Medium';
+    align-items: center;
+}
+
+.creativer_name{
+    color: #756b62;
+}
+
+.creativer_sub{
+    color: grey;
+}
+
+.history_item1{
+    position: absolute;
+    top: 285px;
+    right: 235px;
+    z-index: 300;
+}
+
+.history_item2{
+    position: absolute;
+    top: 520px;
+    left: 750px;
+    z-index: 300;
+}
+/*HISTORY*/
+
+/*PRINCIPS*/
+.princips{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 45vh;
+}
+
+.princips_inner{
+    display: flex;
+    flex: 1 1 0;
+    width: 100%;
+}
+
+.princip{
+    display: flex;
+    flex-direction: column;
+    max-width: 335px;
+    width: 100%;
+    margin-right: 70px;
+    align-items: center;
+}
+.princip:last-child{
+    margin-right: 0px;
+}
+.img{
+    height: 70px;
+    width: 50px;
+}
+
+.princip_content{
+    font-family: 'CormorantInfant-SemiBoldItalic';
+    color: grey;
+    font-size: 24px;
+    margin-top: 30px;
+}
+/*PRINCIPS*/
+
+/*SUNLIGHT*/
+.sunlight{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.background_text{
+    position: absolute;
+    text-align: center;
+    font-family: 'CormorantInfant-Medium';
+    font-size: 160px;
+    z-index: -50;
+    color: #928c86;
+}
+
+.sunlight_inner{
+    display: flex;
+    flex-direction: column;
+    max-width: 630px;
+    height: 390px;
+    width: 100%;
+    background: url(../images/13.jpg) center no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.promotion_text{
+    max-width: 480px;
+    width: 100%;
+    font-family: 'Montserrat-Regular';
+    font-size: 24px;
+    font-weight: 100;
+    color:white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn{
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    transition: all .2s linear;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+/*SUNLIGHT*/
+
+/*SUBSCRIBE*/
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    align-items: center;
+}
+
+.subscribe_inner{
+    display: flex;
+    flex: 1 1 0;
+    max-width: 370px;
+    max-height: 25px;
+    width: 100%;
+}
+
+#image{
+    padding-top: 200px;
+}
+.src{
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 5px 10px;
+    font-family:'Montserrat-Medium';
+    color: #756b62;
+}
+
+.inst{
+    color: #756b62;
+}
+.photo{
+    display: flex;
+    flex: 1 1 0;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.subscribe_photo{
+    display: inline-block;
+    padding-right: 10px;
+    max-height: 370px;
+}
+
+.subscribe_photo:last-child{
+    padding-right: 0px;
+}
+
+/*SUBSCRIBE*/
+
+/*MESSAGE*/
+.message{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55vh;
+    background: url(../images/19.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.message_inner{
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.message_item{
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.message_love{
+    font-family: 'CormorantInfant-MediumItalic';
+    font-size: 55px;
+    color: #756b62;
+}
+
+.message_text{
+    padding-top: 25px;
+    font-family: 'CormorantInfant-SemiBoldItalic';
+    font-size: 24px;
+    color: #756b62;
+}
+
+.message_name_phone{
+    font-family: 'Montserrat-Medium';
+    color: #756b62;
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+.message_name_phone::after{
+    content: "";
+    border: 1px solid #756b62;
+    width: 100%;
+    float: right;
+    margin-top: 10px;
+}
+
+.properties{
+    display: flex;
+    flex:1 1 0;
+    width: 100%;
+}
+
+.property{
+    display: flex;
+    flex:1 1 0;
+    max-width: 150px;
+    width: 100%;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.property_name{
+    font-family: 'Montserrat-Medium';
+    color: #756b62;
+    font-size: 18px;
+    margin: 0px 10px;
+
+}
+.data{
+    display: flex;
+    flex:1 1 0;
+    width: 100%;
+    margin: 30px 0px;
+    align-items: center;
+}
+
+.btn_message{
+    border: 1px solid #756b62;
+    border-radius: 25px;
+    color: #756b62;
+    padding: 15px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    transition: all .2s linear;
+}
+
+.btn_message:hover{
+    background-color: white;
+    color: black;
+}
+/*MESSAGE*/
+
+/*FOOTER*/
+.footer{
+    display: flex;
+    flex: 1 1 0;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/20.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.footer_inner{
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+}
+.mimilo{
+    display: flex;
+    flex-direction: column;
+    color: #756b62;
+    max-width: 230px;
+    font-family: 'Montserrat-Medium';
+    padding-right: 200px;
+}
+
+.mimilo1{
+    display: flex;
+    flex: 1 1 0;
+    color: #756b62;
+    font-family: 'Montserrat-Medium';
+}
+
+.footer_img{
+    width: 30px;
+    margin: 0 25px;
+}
+
+.head{
+    color: white;
+    font-size: 28px;
+    font-family: 'CormorantInfant-SemiBold';
+}
+
+.mimilo_text{
+    font-size: 18px;
+    margin: 25px 0px;
+}
+
+.zn{
+    font-size: 15px;
+    margin: 25px 0px;
+}
+
+/*FOOTER*/
